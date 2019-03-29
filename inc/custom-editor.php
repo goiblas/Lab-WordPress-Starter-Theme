@@ -7,7 +7,7 @@ function goi_custom_editor_setup() {
     add_theme_support( 'editor-styles' );
     add_theme_support( 'dark-editor-style' );
 
-    $googleFont = 'https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700';
+    $googleFont = 'https://fonts.googleapis.com/css?family=Arima+Madurai:300,400,700,800,900|Rubik:300,400,400i,500,700';
     //Enqueuing the editor style
     add_editor_style( ['css/style-editor.css', $googleFont] );
     // google font loaded in frontend

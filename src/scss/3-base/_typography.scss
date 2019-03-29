@@ -14,18 +14,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 900;
   line-height: $f-header-line-height;
   font-family: var(--f-family);
   letter-spacing: -0.5px;
 }
 
+h1 {
+  font-family: var(--f-family-secondary);
+}
+
 a {
-	color: var(--c-link);
+  color: var(--c-link);
+  color: #fff;
   text-decoration: none;
 }
 
-:root {
+html {
   --base: 14px;
   --factor-crecimiento: 0.3;
 

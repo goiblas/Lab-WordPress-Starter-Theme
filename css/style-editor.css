@@ -1,5 +1,6 @@
 html {
   --f-family: 'Rubik', sans-serif;
+  --f-family-secondary: 'Arima Madurai', cursive;
   --c-main: #1A53BE;
   --c-main-light: #4E7BCC;
   --c-main-dark: #1348B0;
@@ -30,24 +31,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1.2;
   font-family: var(--f-family);
   letter-spacing: -0.5px; }
 
+h1 {
+  font-family: var(--f-family-secondary); }
+
 a {
   color: var(--c-link);
+  color: #fff;
   text-decoration: none; }
 
-:root {
+html {
   --base: 14px;
   --factor-crecimiento: 0.3; }
   @media (min-width: 640px) {
-    :root {
+    html {
       --base: 17px;
       --factor-crecimiento: 0.4; } }
   @media (min-width: 900px) {
-    :root {
+    html {
       --factor-crecimiento: 0.5; } }
 
 * {
