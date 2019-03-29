@@ -1,0 +1,16 @@
+html {
+  --f-family: 'Rubik', sans-serif;
+  --c-main: #1A53BE;
+  --c-main-light: #4E7BCC;
+  --c-main-dark: #1348B0;
+  --c-secondary: #302F35;
+  --c-secondary-dark: #232428;
+  --c-secondary-light: #3D3D45;
+  --c-alert: #b50b19;
+  --c-success: #427607;
+  --c-warning: #ffae00;
+  --c-text: rgba(255,255,255,.98);
+  --c-text-light: #EDECF1;
+  --c-text-lighten: #95969A;
+  --c-border: #4E4F54;
+  --c-link: #51CAE7; }

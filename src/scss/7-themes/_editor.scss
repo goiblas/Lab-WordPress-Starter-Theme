@@ -1,0 +1,29 @@
+.editor-post-title__input {
+    color: var(--c-text);
+    font-family: var(--f-family);
+    font-weight: 700;
+}
+
+// @TODO: mejorar aspecto del enlace en permalink aparece con el fondo blanco
+.editor-post-permalink__link {
+    color: #000;
+}
+
+// Widths 
+.wp-block {
+    max-width: 720px;
+}
+
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+
+//🎉 Party rules!!!
+// button {
+//     padding: 50px;
+// }

@@ -1,0 +1,80 @@
+body {
+  font-family: var(--f-family);
+  line-height: $f-line-height;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+	background-color: var(--c-secondary);
+  color: var(--c-text);
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: $f-header-line-height;
+  font-family: var(--f-family);
+  letter-spacing: -0.5px;
+}
+
+a {
+	color: var(--c-link);
+  text-decoration: none;
+}
+
+:root {
+  --base: 14px;
+  --factor-crecimiento: 0.3;
+
+  @media (min-width: 640px) {
+	  --base: 17px;
+	  --factor-crecimiento: 0.4;
+  }
+  
+  @media (min-width: 900px) {
+	  --factor-crecimiento: 0.5;
+  }
+}
+
+* {
+  font-size: calc(
+    var(--base) + var(--base) * var(--font-size, 0) * var(--factor-crecimiento)
+  );
+}
+
+h1 {
+  --font-size: 4;
+}
+
+h2 {
+  --font-size: 3;
+}
+
+h3 {
+  --font-size: 2;
+}
+
+h4 {
+  --font-size: 1.5;
+}
+
+
+// Classes editor
+.has-small-font-size {
+  --font-size: 0.8;
+}
+.has-normal-font-size {
+  --font-size: 1;
+}
+.has-m-font-size {
+  --font-size: 1.5;
+}
+.has-l-font-size {
+  --font-size: 2;
+}
+.has-xl-font-size {
+  --font-size: 3;
+}

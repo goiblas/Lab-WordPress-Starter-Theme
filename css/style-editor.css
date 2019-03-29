@@ -1,0 +1,98 @@
+html {
+  --f-family: 'Rubik', sans-serif;
+  --c-main: #1A53BE;
+  --c-main-light: #4E7BCC;
+  --c-main-dark: #1348B0;
+  --c-secondary: #302F35;
+  --c-secondary-dark: #232428;
+  --c-secondary-light: #3D3D45;
+  --c-alert: #b50b19;
+  --c-success: #427607;
+  --c-warning: #ffae00;
+  --c-text: rgba(255,255,255,.98);
+  --c-text-light: #EDECF1;
+  --c-text-lighten: #95969A;
+  --c-border: #4E4F54;
+  --c-link: #51CAE7; }
+
+body {
+  font-family: var(--f-family);
+  line-height: 1.57;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  background-color: var(--c-secondary);
+  color: var(--c-text);
+  text-rendering: optimizeLegibility; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: var(--f-family);
+  letter-spacing: -0.5px; }
+
+a {
+  color: var(--c-link);
+  text-decoration: none; }
+
+:root {
+  --base: 14px;
+  --factor-crecimiento: 0.3; }
+  @media (min-width: 640px) {
+    :root {
+      --base: 17px;
+      --factor-crecimiento: 0.4; } }
+  @media (min-width: 900px) {
+    :root {
+      --factor-crecimiento: 0.5; } }
+
+* {
+  font-size: calc( var(--base) + var(--base) * var(--font-size, 0) * var(--factor-crecimiento)); }
+
+h1 {
+  --font-size: 4; }
+
+h2 {
+  --font-size: 3; }
+
+h3 {
+  --font-size: 2; }
+
+h4 {
+  --font-size: 1.5; }
+
+.has-small-font-size {
+  --font-size: 0.8; }
+
+.has-normal-font-size {
+  --font-size: 1; }
+
+.has-m-font-size {
+  --font-size: 1.5; }
+
+.has-l-font-size {
+  --font-size: 2; }
+
+.has-xl-font-size {
+  --font-size: 3; }
+
+.editor-post-title__input {
+  color: var(--c-text);
+  font-family: var(--f-family);
+  font-weight: 700; }
+
+.editor-post-permalink__link {
+  color: #000; }
+
+.wp-block {
+  max-width: 720px; }
+
+.wp-block[data-align="wide"] {
+  max-width: 1080px; }
+
+.wp-block[data-align="full"] {
+  max-width: none; }

@@ -1,0 +1,23 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 $fields-padding;
+    color: #fff;
+    background-color: $c-main;
+    border-radius: $border-radius;
+    text-transform: uppercase;
+    line-height: $fields-height;
+    letter-spacing: 1px;
+    text-shadow: rgba(0,0,0,.17) 0 1px;
+    border:0;
+    box-shadow: rgba(0,0,0,.18) 0 2px 3px; 
+    transition: background .25s;
+    &:focus, &:hover  {
+        outline: 0;
+        background-color: $c-main-light;
+    }
+    &:active {
+        transition: none;
+        background-color:$c-main;
+    }
+}
