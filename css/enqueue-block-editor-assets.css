@@ -1,0 +1,8 @@
+* {
+  font-family: "Comic Sans MS", arial !important; }
+
+#adminmenu a, #adminmenu .wp-submenu a, #adminmenuback a, #adminmenuwrap a {
+  color: #FED90F !important; }
+
+button {
+  padding: 2rem !important; }

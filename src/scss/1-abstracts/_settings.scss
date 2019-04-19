@@ -29,7 +29,7 @@ $utils-breakpoint: (
 // typography 
 // ---------------------------------------------------
 
-$f-family: 'Roboto', sans-serif;
+$f-family: 'Chewy', cursive;
 $f-line-height: 1.57;
 $f-header-line-height: 1.2;
 
@@ -65,15 +65,13 @@ $fields-height: 44px;
 $fields-padding: 16px;
 
 html {
-  --f-family: 'Rubik', sans-serif;
-  --f-family-secondary: 'Arima Madurai', cursive;
+  --f-family:  'IBM Plex Sans', sans-serif; 
+  --f-family-heading: 'Simpson Font', serif;
 
   // colors
-  --c-main: #1A53BE;
-  --c-main-light: #4E7BCC;
-  --c-main-dark: #1348B0;
+  --c-main: #FED90F;
 
-  --c-secondary: #302F35;
+  --c-secondary: #D1B271;
   --c-secondary-dark: #232428;
   --c-secondary-light: #3D3D45;
   
@@ -81,12 +79,12 @@ html {
   --c-success: #427607;
   --c-warning: #ffae00;
 
-  --c-text: rgba(255,255,255,.98);
+  --c-text:  #272727;
   --c-text-light: #EDECF1;
   --c-text-lighten: #95969A;
 
   --c-border: #4E4F54;
 
-  --c-link: #51CAE7;
-
+  --c-link: #8e27ca;
+  --c-link-light: rgba(161, 45, 228, .6);
 }

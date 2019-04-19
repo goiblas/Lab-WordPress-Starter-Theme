@@ -1,15 +1,17 @@
+
+
+@font-face {
+    font-family: 'Simpson Font';
+    src:  url('../assets/fonts/simpsonfont.woff2') format('woff2');
+}
+
 .editor-post-title__input {
     color: var(--c-text);
-    font-family: var(--f-family);
-    font-weight: 700;
+    font-family: var(--f-family-heading);
+    font-weight: 400;
 }
 
-// @TODO: mejorar aspecto del enlace en permalink aparece con el fondo blanco
-.editor-post-permalink__link {
-    color: #000;
-}
 
-// Widths 
 .wp-block {
     max-width: 720px;
 }
@@ -23,6 +25,16 @@
 }
 
 
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+    border-left-color: var(--c-link);
+}
+.wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
+    color: var(--c-link)
+}
+
+.wp-block[data-type="core/heading"] + .wp-block[data-type="core/paragraph"] {
+	margin-top: -1rem;
+} 
 //🎉 Party rules!!!
 // button {
 //     padding: 50px;

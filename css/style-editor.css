@@ -1,29 +1,28 @@
 html {
-  --f-family: 'Rubik', sans-serif;
-  --f-family-secondary: 'Arima Madurai', cursive;
-  --c-main: #1A53BE;
-  --c-main-light: #4E7BCC;
-  --c-main-dark: #1348B0;
-  --c-secondary: #302F35;
+  --f-family:  'IBM Plex Sans', sans-serif;
+  --f-family-heading: 'Simpson Font', serif;
+  --c-main: #FED90F;
+  --c-secondary: #D1B271;
   --c-secondary-dark: #232428;
   --c-secondary-light: #3D3D45;
   --c-alert: #b50b19;
   --c-success: #427607;
   --c-warning: #ffae00;
-  --c-text: rgba(255,255,255,.98);
+  --c-text:  #272727;
   --c-text-light: #EDECF1;
   --c-text-lighten: #95969A;
   --c-border: #4E4F54;
-  --c-link: #51CAE7; }
+  --c-link: #8e27ca;
+  --c-link-light: rgba(161, 45, 228, .6); }
 
 body {
   font-family: var(--f-family);
   line-height: 1.57;
   letter-spacing: 0.2px;
-  font-weight: 300;
-  background-color: var(--c-secondary);
+  font-weight: 400;
   color: var(--c-text);
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  background-color: var(--c-main); }
 
 h1,
 h2,
@@ -31,32 +30,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.2;
-  font-family: var(--f-family);
+  font-family: 'Simpson Font', serif;
   letter-spacing: -0.5px; }
-
-h1 {
-  font-family: var(--f-family-secondary); }
 
 a {
   color: var(--c-link);
-  color: #fff;
-  text-decoration: none; }
+  -webkit-text-decoration: underline var(--c-link-light);
+          text-decoration: underline var(--c-link-light); }
 
 html {
-  --base: 14px;
+  --base: 18px;
   --factor-crecimiento: 0.3; }
   @media (min-width: 640px) {
     html {
-      --base: 17px;
+      --base: 20px;
       --factor-crecimiento: 0.4; } }
   @media (min-width: 900px) {
     html {
       --factor-crecimiento: 0.5; } }
 
-* {
-  font-size: calc( var(--base) + var(--base) * var(--font-size, 0) * var(--factor-crecimiento)); }
+*, p {
+  font-size: calc( var(--base) + var(--base) * var(--font-size, 0) * var(--factor-crecimiento)); }
 
 h1 {
   --font-size: 4; }
@@ -85,13 +81,14 @@ h4 {
 .has-xl-font-size {
   --font-size: 3; }
 
+@font-face {
+  font-family: 'Simpson Font';
+  src: url("../assets/fonts/simpsonfont.woff2") format("woff2"); }
+
 .editor-post-title__input {
   color: var(--c-text);
-  font-family: var(--f-family);
-  font-weight: 700; }
-
-.editor-post-permalink__link {
-  color: #000; }
+  font-family: var(--f-family-heading);
+  font-weight: 400; }
 
 .wp-block {
   max-width: 720px; }
@@ -101,3 +98,12 @@ h4 {
 
 .wp-block[data-align="full"] {
   max-width: none; }
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+  border-left-color: var(--c-link); }
+
+.wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
+  color: var(--c-link); }
+
+.wp-block[data-type="core/heading"] + .wp-block[data-type="core/paragraph"] {
+  margin-top: -1rem; }

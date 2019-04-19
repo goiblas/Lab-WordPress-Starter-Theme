@@ -159,7 +159,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
 /**
- * custom editor experience
+ * Personalizar el editor 
  */
- require get_template_directory() . '/inc/custom-editor.php';
+// Mal
+// require get_template_directory() . '/personalizar-editor/enqueue-block-editor-assets.php';
+
+// Bien
+require get_template_directory() . '/personalizar-editor/add-editor-style.php';
+
+/**
+ * Custom post type
+ */
+// require get_template_directory() . '/inc/game-custom-post-type.php';

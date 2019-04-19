@@ -5,9 +5,9 @@
 function goi_custom_editor_setup() {
 
     add_theme_support( 'editor-styles' );
-    add_theme_support( 'dark-editor-style' );
+    // add_theme_support( 'dark-editor-style' );
 
-    $googleFont = 'https://fonts.googleapis.com/css?family=Arima+Madurai:300,400,700,800,900|Rubik:300,400,400i,500,700';
+    $googleFont = 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700';
     //Enqueuing the editor style
     add_editor_style( ['css/style-editor.css', $googleFont] );
     // google font loaded in frontend
@@ -16,8 +16,6 @@ function goi_custom_editor_setup() {
     add_theme_support( 'responsive-embeds' );
     add_theme_support( 'wp-block-styles' );
 
-
-    
     // custom 
     add_theme_support( 
         'editor-font-sizes', array(
@@ -54,10 +52,10 @@ function goi_custom_editor_setup() {
     ));
 }
 
-function goi_add_raw_editor_styles() {
-    wp_enqueue_style('style-editor-raw', get_template_directory_uri() . '/css/style-editor-raw.css', array(), filemtime(get_template_directory() . '/css/style-editor-raw.css'), false);
-}
+// function goi_add_raw_editor_styles() {
+//     wp_enqueue_style('style-editor-raw', get_template_directory_uri() . '/css/style-editor-raw.css', array(), filemtime(get_template_directory() . '/css/style-editor-raw.css'), false);
+// }
 
-add_action( 'enqueue_block_assets', 'goi_add_raw_editor_styles' );
+// add_action( 'enqueue_block_assets', 'goi_add_raw_editor_styles' );
 
 add_action( 'after_setup_theme', 'goi_custom_editor_setup' );

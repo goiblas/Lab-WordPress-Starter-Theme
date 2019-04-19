@@ -30,7 +30,7 @@ function scss() {
 function server(done) {
   browser.init({
       // server url
-      proxy: "http://127.0.0.1/wordpress/"
+      proxy: "http://develop.local/"
   }, done);
 }
 const watch = () => {
