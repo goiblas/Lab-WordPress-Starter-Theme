@@ -9,10 +9,9 @@
     License URI: LICENSE
     Text Domain: goi
 */
-// https://sass-guidelin.es/#the-7-1-pattern
 
-@import './1-abstracts/mixins';
 @import './1-abstracts/settings';
+@import './1-abstracts/mixins';
 
 @import './3-base/wordpress';
 @import './3-base/typography';
@@ -29,4 +28,5 @@
 @import './5-components/cards';
 
 @import './6-pages/home';
+
 @import './7-themes/frontend';

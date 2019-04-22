@@ -50,6 +50,7 @@ function goi_custom_editor_setup() {
                 'slug' => 'small'
             )
     ));
+    
 }
 
 // function goi_add_raw_editor_styles() {
